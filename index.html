@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div onclick="esconderForm()" class="mascara-formulario"></div>
+    <div class="header">
+        <img src="/img/logo-header.png" alt="Header">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </div>
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./img/logo.png" alt="logo do mario bros" class="logo-principal">
+            <p>Seu negócio Online é o nosso objetivo!</p>
+            <p> Desenvolvedor de Sites com experiência consolidada para deixar a sua empresa totalmente Online e funcional.
+            <p class="apresentamos">Solicite seu atendimento agora mesmo!</p>
+            <button onclick="mostrarForm()">DESEJO ATENDIMENTO</button>
+        </div>
+        <div>
+            <img src="./img/mario.png" class="mario-luigi" alt="mario-luigi">
+        </div>
+    </div>
+
+
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5569993999437&text=Gostaria%20de%20Atendimento!" class="link-whatsapp">
+        <img src="./img/whatsapp.png" alt="link para whatsapp">
+    </a>
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/wI9NRHVRldi" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="nome">
+        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite sua solicitação aqui.." name="duvida"></textarea>
+        <button type="submit" class="orcamento">Pedir Orçamento</button>
+    </form>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

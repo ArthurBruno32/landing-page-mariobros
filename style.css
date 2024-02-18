@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    height: 170px;
+}
+
+button {
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover {
+    color: #c51111;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.logo-principal {
+    margin-bottom: 15px;
+
+}
+
+.mario-luigi {
+    height: 350px;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 160px;
+    height: 100vh;
+
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-principal {
+    width: 50%;
+    justify-content: space-between
+}
+
+.caixa-principal p {
+    font-size: 17px;
+
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    justify-content: left;
+}
+
+.apresentamos {
+    margin-top: 15px;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 25px;
+
+}
+
+.header img {
+    height: 60px;
+
+}
+
+.header a {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 22.5px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -315px;
+    padding: 25px;
+    border-radius: 5px;
+    gap: 15px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+.mascara-formulario {
+    transition: visibility 1s ease-in-out;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+@media(max-width: 1100px) {
+    p {
+        text-align: center;
+        font-size: larger;
+    }
+
+    button {
+        margin-top: 100px;
+        width: 250px;
+        height: 80px;
+
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mario-luigi {
+        width: 40vw;
+        margin-top: 200px;
+        height: auto;
+    }
+
+    .header {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 440px) {
+    button {
+        width: 180px;
+        height: 50px;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+
+    .mario-luigi {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: 50vw;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+
+}
+
+@media(max-width: 435px) {
+    p {
+        text-align: center;
+    }
+
+    .header a {
+        font-size: 19px;
+    }
+
+    button {
+        position: absolute;
+        bottom: 330px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .orcamento {
+        bottom: 263px;
+    }
+
+    .mario-luigi {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: 50vw;
+        transform: translateX(-50%);
+        left: 50%;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 415px) {
+    button {
+        bottom: 280px;
+    }
+
+    .mario-luigi {
+        height: auto;
+        width: 40vw;
+    }
+
+    .header a {
+        font-size: 15px;
+    }
+
+    .header a:hover {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 395px) {
+
+    .header a {
+        font-size: 14px;
+    }
+
+    .header a:hover {
+        font-size: 15px;
+    }
+
+    button {
+        position: absolute;
+        bottom: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mario-luigi {
+        height: auto;
+        width: 35vw;
+    }
+}
+@media(max-width: 383px) {
+    .mario-luigi {
+        height: auto;
+        width: 24vw;
+        bottom: -50px;
+        
+    }
+    button {
+        bottom: 140px;
+    }
+    p {
+        text-align: left;
+    }
+}
+@media(max-width: 376px) {
+    .mario-luigi {
+        height: auto;
+        width: 24vw;
+        bottom: 36px;
+    }
+
+    button {
+        bottom: 20px;
+    }
+
+    p {
+        font-size: 1px;
+        padding: 1px;
+        text-align: left;
+    }
+
+    .logo-principal {
+        height: auto;
+        width: 50vw;
+    }
+
+    .link-whatsapp {
+        height: 50px;
+    }
+}
+
+@media(max-width: 361px) {
+    .mario-luigi {
+        height: auto;
+        width: 24vw;
+        bottom: 100px;
+    }
+
+    button {
+        bottom: 70px;
+    }
+
+    p {
+        font-size: 1px;
+        padding: 1px;
+        text-align: left;
+    }
+
+    .logo-principal {
+        height: auto;
+        width: 50vw;
+    }
+
+    .link-whatsapp {
+        height: 50px;
+    }
+}
+
+@media(max-width: 315px) {
+    .mario-luigi {
+        height: auto;
+        width: 25vw;
+    }
+}
